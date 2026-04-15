@@ -1,0 +1,31 @@
+	.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar info"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 3px;
+  padding: 5px;
+}
+.container div {
+  padding: 10px;
+}
+.container div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container div.sidebar {
+  grid-area: sidebar;
+  padding-left: 0;
+}
+.container div.info {
+  grid-area: info;
+}
+.container div.footer {
+  grid-area: footer;
+  text-align: center;  
+}
+div {
+  border: 2px solid lightpink;
+}
